@@ -1,3 +1,7 @@
+const mat = {
+
+
+};
 function add(x1,x2){
     return x1+x2;
 } 
@@ -15,7 +19,17 @@ function divide(x1,x2){
     }
 } 
 
-exports.add= add;
+mat.add= add
+mat.substract=substract;
+mat.multiply=multiply;
+mat.divide=divide;
+function hello (name){
+   console.log("hola"+name);
+   return 0;
+}
+
+module.exports = mat;
+/*exports.add= add;
 exports.substract= substract;
 exports.multiply= multiply;
-exports.divide= divide;
+exports.divide= divide;*/
